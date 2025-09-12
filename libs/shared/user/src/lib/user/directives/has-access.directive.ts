@@ -21,7 +21,7 @@ export class HasAuthorityDirective implements OnInit {
 	private readonly viewContainer = inject(ViewContainerRef);
 	private readonly templateRef = inject(TemplateRef);
 	private readonly currentUser$ = inject(SLS_UI_CURRENT_USER);
- 
+
 	readonly requiredAuthorities = input.required<(string | SlsUserAuthority)[]>({
 		alias: 'hasAccess',
 	});

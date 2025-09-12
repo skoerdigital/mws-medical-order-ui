@@ -11,8 +11,8 @@ export const removeEmptyStringProperties = <T>(obj: T): T => {
 	// Handle arrays
 	if (Array.isArray(obj)) {
 		return obj
-			.map(item => removeEmptyStringProperties(item))
-			.filter(item => item !== undefined) as T;
+			.map((item) => removeEmptyStringProperties(item))
+			.filter((item) => item !== undefined) as T;
 	}
 
 	// Handle primitive types
@@ -22,7 +22,7 @@ export const removeEmptyStringProperties = <T>(obj: T): T => {
 
 	// Handle objects
 	const cleaned: any = {};
-	
+
 	for (const [key, value] of Object.entries(obj)) {
 		// Skip properties with empty string values
 		if (value === '') {
@@ -31,15 +31,17 @@ export const removeEmptyStringProperties = <T>(obj: T): T => {
 
 		// Recursively clean nested objects/arrays
 		const cleanedValue = removeEmptyStringProperties(value);
-		
+
 		// Only add the property if the cleaned value is not undefined
 		// and for objects, only if they have at least one property
 		if (cleanedValue !== undefined) {
-			if (typeof cleanedValue === 'object' && 
-				cleanedValue !== null && 
-				!Array.isArray(cleanedValue) && 
+			if (
+				typeof cleanedValue === 'object' &&
+				cleanedValue !== null &&
+				!Array.isArray(cleanedValue) &&
 				!(cleanedValue instanceof Date) &&
-				Object.keys(cleanedValue).length === 0) {
+				Object.keys(cleanedValue).length === 0
+			) {
 				// Skip empty objects
 				continue;
 			}

@@ -11,16 +11,13 @@ import { Observable, tap } from 'rxjs';
 
 import { AuthSettings } from '../models';
 import { AUTH_SETTINGS } from '../providers';
-import { handleLogin } from '../utils';
 import { AuthSettingsService } from '../services';
+import { handleLogin } from '../utils';
 
 export const handleOAuthInterceptor = <T>(
 	request: HttpRequest<T>,
 	next: HttpHandlerFn,
-	{
-		redirectUrlStorage,
-		redirectUrlStoreKey,
-	}: Required<AuthSettings>,
+	{ redirectUrlStorage, redirectUrlStoreKey }: Required<AuthSettings>,
 	routerInstance: Router,
 	authUrl: string,
 ): Observable<HttpEvent<unknown>> => {
@@ -59,11 +56,5 @@ export const withHandleOAuthInterceptor =
 		const authUrl = inject(AuthSettingsService).authUrl;
 		const router = inject(Router);
 
-		return handleOAuthInterceptor(
-			request,
-			next,
-			authSettings,
-			router,
-			authUrl,
-		);
+		return handleOAuthInterceptor(request, next, authSettings, router, authUrl);
 	};

@@ -36,8 +36,8 @@ export class PreserveQueryLocationStrategy extends PathLocationStrategy {
 }
 
 export const provideQueryLocationStrategy = (): Provider => {
-    return {
-        provide: LocationStrategy,
-        useClass: PreserveQueryLocationStrategy,
-    };
-}
+	return {
+		provide: LocationStrategy,
+		useClass: PreserveQueryLocationStrategy,
+	};
+};

@@ -1,4 +1,4 @@
-import { HttpClient } from "@angular/common/http";
+import { HttpClient } from '@angular/common/http';
 
 export interface AuthSettings {
 	getAuthUrlFn: (httpClient: HttpClient) => Promise<string>;

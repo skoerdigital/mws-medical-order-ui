@@ -1,6 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
-import { FormControlDirective, ReactiveFormsModule, Validators } from '@angular/forms';
+import {
+	FormControlDirective,
+	ReactiveFormsModule,
+	Validators,
+} from '@angular/forms';
 
 import { Select, SelectModule, SelectStyle } from 'primeng/select';
 
@@ -23,7 +27,7 @@ import { PrimeNgControlBehaviorDirective } from './primeng-control-behavior.dire
 		{
 			directive: PrimeNgControlBehaviorDirective,
 			inputs: ['control', 'label', 'id', 'errorTexts'],
-		}
+		},
 	],
 })
 export class SlsUiSelectComponent extends Select {

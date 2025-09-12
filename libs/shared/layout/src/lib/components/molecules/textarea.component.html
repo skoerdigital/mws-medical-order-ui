@@ -1,5 +1,8 @@
 <div class="flex flex-col gap-2">
-	<label [for]="host.id()" class="whitespace-nowrap overflow-hidden text-ellipsis">
+	<label
+		[for]="host.id()"
+		class="whitespace-nowrap overflow-hidden text-ellipsis"
+	>
 		{{ host.label() }}
 		@if (isRequired) {
 			<span class="text-red-500">*</span>
@@ -12,7 +15,17 @@
 		"
 	></ng-container>
 	<ng-template let-control let-id="id" #defaultInputTemplate>
-		<textarea class="mt-2" rows="5" cols="30" pTextarea [formControl]="control" [id]="id" [maxlength]="maxlength()!" (focus)="onToggleFocus(true)" (blur)="onToggleFocus(false)"></textarea>
+		<textarea
+			class="mt-2"
+			rows="5"
+			cols="30"
+			pTextarea
+			[formControl]="control"
+			[id]="id"
+			[maxlength]="maxlength()!"
+			(focus)="onToggleFocus(true)"
+			(blur)="onToggleFocus(false)"
+		></textarea>
 	</ng-template>
 	@for (
 		error of host.control() | slsUiFormControlErrors: host.errorTexts()!;
@@ -22,6 +35,8 @@
 	}
 
 	@if (isFocused() && maxlength()) {
-		<small class="text-gray-500 self-end">{{ host.control().value.length }} / {{ maxlength() }}</small>
+		<small class="text-gray-500 self-end"
+			>{{ host.control().value.length }} / {{ maxlength() }}</small
+		>
 	}
 </div>
