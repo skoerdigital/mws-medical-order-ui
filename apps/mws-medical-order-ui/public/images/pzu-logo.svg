@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:i="&amp;ns_ai;" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" width="226.771" height="226.771">
+  <switch transform="translate(-113.12 -114.019)">
+    <g i:extraneous="self">
+      <radialGradient id="a" cx="156.975" cy="152.475" r="197.851" gradientTransform="translate(-7.815 -7.764) scale(1.0667)" gradientUnits="userSpaceOnUse">
+        <stop offset="0" style="stop-color:#84d0f0"/>
+        <stop offset=".15" style="stop-color:#00a8e4"/>
+        <stop offset=".333" style="stop-color:#0078be"/>
+        <stop offset=".5" style="stop-color:#00509e"/>
+        <stop offset="1" style="stop-color:#001c54"/>
+      </radialGradient>
+      <path d="m203.357 182.211 2.508 12.85h21.572l-.079.224-26.133 78.072h46.562l-3.055-13.68h-23.651l.076-.217 25.226-77.249z" style="fill:url(#a)"/>
+      <radialGradient id="b" cx="157.856" cy="152.47" r="196.278" gradientTransform="translate(-7.815 -7.764) scale(1.0667)" gradientUnits="userSpaceOnUse">
+        <stop offset="0" style="stop-color:#84d0f0"/>
+        <stop offset=".15" style="stop-color:#00a8e4"/>
+        <stop offset=".333" style="stop-color:#0078be"/>
+        <stop offset=".5" style="stop-color:#00509e"/>
+        <stop offset="1" style="stop-color:#001c54"/>
+      </radialGradient>
+      <path d="M187.693 205.328h-22.168l1.576 10.468v33.824h12.435v-10.621h.165l7.992.009c9.087 0 16.721-7.865 16.721-16.946 0-9.096-7.634-16.734-16.721-16.734zm-1.107 23.855-6.885.014h-.165v-13.379h.165l6.885-.013c3.486 0 6.561 3.065 6.561 6.549-.001 3.506-3.075 6.829-6.561 6.829z" style="fill:url(#b)"/>
+      <radialGradient id="c" cx="157.856" cy="152.055" r="196.607" gradientTransform="translate(-7.815 -7.764) scale(1.0667)" gradientUnits="userSpaceOnUse">
+        <stop offset="0" style="stop-color:#84d0f0"/>
+        <stop offset=".15" style="stop-color:#00a8e4"/>
+        <stop offset=".333" style="stop-color:#0078be"/>
+        <stop offset=".5" style="stop-color:#00509e"/>
+        <stop offset="1" style="stop-color:#001c54"/>
+      </radialGradient>
+      <path d="M274.452 231.618c0 4.135-3.379 7.249-7.232 7.249s-7.229-3.114-7.229-7.249c0-.353.013-24.924.016-27.336l-12.555 2.036v24.708c0 11.107 8.95 19.81 19.769 19.81 10.819 0 19.771-8.702 19.771-19.81v-26.743l-12.568 2.036.028 25.299z" style="fill:url(#c)"/>
+      <radialGradient id="d" cx="157.853" cy="152.476" r="196.272" gradientTransform="translate(-7.815 -7.764) scale(1.0667)" gradientUnits="userSpaceOnUse">
+        <stop offset="0" style="stop-color:#84d0f0"/>
+        <stop offset=".15" style="stop-color:#00a8e4"/>
+        <stop offset=".333" style="stop-color:#0078be"/>
+        <stop offset=".5" style="stop-color:#00509e"/>
+        <stop offset="1" style="stop-color:#001c54"/>
+      </radialGradient>
+      <path d="M226.516 114.019c-62.527.013-113.396 50.886-113.396 113.401 0 62.511 50.869 113.37 113.396 113.37 62.507 0 113.367-50.859 113.375-113.37-.008-62.515-50.869-113.389-113.375-113.401zm.002 193.116c-43.894-.067-79.665-35.835-79.742-79.724.077-43.887 35.849-79.657 79.74-79.735h.002c43.869.078 79.634 35.848 79.728 79.735-.095 43.889-35.859 79.656-79.728 79.724z" style="fill:url(#d)"/>
+    </g>
+  </switch>
+</svg>
