@@ -20,7 +20,7 @@
 		"allowSyntheticDefaultImports": true,
 		"esModuleInterop": true,
 		"paths": {
-			"@ocms/nass": ["libs/nass/src/index.ts"],
+			"@mws/medical-order": ["libs/mws-medical-order/src/index.ts"],
 			"@sls-ui/auth": ["libs/shared/auth/src/index.ts"],
 			"@sls-ui/context": ["libs/shared/context/src/index.ts"],
 			"@sls-ui/environment": ["libs/shared/environment/src/index.ts"],
@@ -30,8 +30,7 @@
 			"@sls-ui/models": ["libs/shared/models"],
 			"@sls-ui/texts": ["libs/shared/texts/src/index.ts"],
 			"@sls-ui/user": ["libs/shared/user/src/index.ts"],
-			"@sls-ui/utils": ["libs/shared/utils/src/index.ts"],
-			"registration-ui": ["libs/registration-ui/src/index.ts"]
+			"@sls-ui/utils": ["libs/shared/utils/src/index.ts"]
 		}
 	},
 	"exclude": ["node_modules", "tmp"]

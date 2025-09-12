@@ -94,20 +94,12 @@ module.exports = [
 							onlyDependOnLibsWithTags: ['shared'],
 						},
 						{
-							sourceTag: 'nass-insurances-api',
-							onlyDependOnLibsWithTags: ['registration-ui-lib', 'nass-lib'],
-						},
-						{
 							sourceTag: 'mws-medical-order-ui-app',
-							onlyDependOnLibsWithTags: ['shared', 'registration-ui-lib', 'nass-lib'],
+							onlyDependOnLibsWithTags: ['shared', 'mws-medical-order-lib'],
 						},
 						{
-							sourceTag: 'registration-ui-lib',
-							onlyDependOnLibsWithTags: ['shared'],
-						},
-						{
-							sourceTag: 'nass-lib',
-							onlyDependOnLibsWithTags: ['shared'],
+							sourceTag: 'mws-medical-order-lib',
+							onlyDependOnLibsWithTags: ['shared', 'mws-medical-order-lib'],
 						},
 					],
 				},

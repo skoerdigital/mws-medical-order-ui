@@ -1,5 +1,29 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@layer tailwind-base, primeng, tailwind-utilities;
+@import 'primeicons/primeicons.css';
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
-/* You can add global styles to this file, and also import other style files */
+@layer tailwind-base {
+	@tailwind base;
+}
+
+@layer tailwind-utilities {
+	@tailwind components;
+	@tailwind utilities;
+}
+
+*,
+html {
+	font-family: 'Source Sans 3', serif;
+	font-optical-sizing: auto;
+	font-weight: normal;
+	font-style: normal;
+}
+
+th {
+	font-weight: 600;
+}
+
+:root,
+body {
+	overscroll-behavior: none;
+}
