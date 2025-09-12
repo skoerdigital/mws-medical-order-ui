@@ -1,0 +1,14 @@
+@if (globalLoaderSettings$ | async; as globalLoaderSettings) {
+	@if (globalLoaderSettings.isShown) {
+		<div
+			class="z-999999 fixed h-screen w-screen flex items-center justify-center top-0 left-0 bg-black bg-opacity-60 backdrop-blur-sm"
+		>
+			<ng-container
+				*ngComponentOutlet="
+					globalLoaderSettings.componentClass;
+					inputs: globalLoaderSettings.componentSettings
+				"
+			/>
+		</div>
+	}
+}

@@ -1,0 +1,38 @@
+<div class="flex flex-col gap-2">
+	<label
+		[for]="host.id()"
+		class="whitespace-nowrap overflow-hidden text-ellipsis"
+		>
+		{{ host.label() }}
+		@if (isRequired) {
+			<span class="text-red-500">*</span>
+		}
+		</label
+	>
+	<p-datepicker
+		[maxDate]="host.maxDate()"
+		styleClass="w-full"
+		[formControl]="$any(host.control())"
+		[id]="host.id()"
+		[showIcon]="true"
+		appendTo="body"
+		[selectionMode]="$any(selectionModeControl.value)"
+	>
+		@if (selectionMode() === 'both') {
+			<ng-template pTemplate="header">
+				<div class="flex align-middle justify-center p-2 gap-2">
+					<p-toggleswitch
+						[formControl]="selectionModeControl"
+						inputId="selectionMode"
+						trueValue="range"
+						falseValue="single"
+					/>
+					<label for="selectionMode">Zakres dat</label>
+				</div>
+			</ng-template>
+		}
+	</p-datepicker>
+	@for (error of host.control() | slsUiFormControlErrors; track $index) {
+		<small class="text-red-500"> {{ error }}</small>
+	}
+</div>

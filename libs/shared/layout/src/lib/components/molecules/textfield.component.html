@@ -1,0 +1,23 @@
+<div class="flex flex-col gap-2">
+	<label [for]="host.id()" class="whitespace-nowrap overflow-hidden text-ellipsis">
+		{{ host.label() }}
+		@if (isRequired) {
+			<span class="text-red-500">*</span>
+		}
+	</label>
+	<ng-container
+		*ngTemplateOutlet="
+			customInputComponentTemplate() || defaultInputTemplate;
+			context: { $implicit: host.control(), id: host.id() }
+		"
+	></ng-container>
+	<ng-template let-control let-id="id" #defaultInputTemplate>
+		<input pInputText [formControl]="control" [id]="id" />
+	</ng-template>
+	@for (
+		error of host.control() | slsUiFormControlErrors: host.errorTexts()!;
+		track $index
+	) {
+		<small class="text-red-500"> {{ error }}</small>
+	}
+</div>

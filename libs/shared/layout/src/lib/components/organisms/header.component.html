@@ -1,0 +1,26 @@
+<nav
+	class="flex justify-between items-center bg-secondary p-4 text-secondary shadow-md"
+>
+	<div class="flex items-center">
+		@if (menuItems) {
+			<p-button
+				icon="pi pi-align-justify"
+				[rounded]="true"
+				[text]="true"
+				styleClass="text-gray-600"
+			/>
+		}
+	</div>
+	<div class="flex items-center gap-4">
+		<img src="images/pzu-logo.svg" alt="search" class="w-12 h-12" />
+		<h2>System Likwidacji Szkód 2.0</h2>
+	</div>
+	<div class="flex items-center gap-4">
+		<span class="ml-2">{{ currentUser$ | async }}</span>
+		<p-avatar
+			icon="pi pi-user"
+			shape="circle"
+			[style]="{ 'background-color': '#2196F3', color: '#ffffff' }"
+		></p-avatar>
+	</div>
+</nav>

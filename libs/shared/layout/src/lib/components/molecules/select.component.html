@@ -1,0 +1,25 @@
+<div class="flex flex-col gap-2">
+	<label [for]="id" class="whitespace-nowrap overflow-hidden text-ellipsis">
+		{{ host.label() }}
+		
+		@if (isRequired) {
+			<span class="text-red-500">*</span>
+		}
+	</label>
+	<p-select
+		[options]="options"
+		[formControl]="$any(host.control())"
+		[id]="id"
+		[filter]="true"
+		[filterPlaceholder]="'Nie znaleziono wyników'"
+		[optionLabel]="optionLabel || 'description'"
+		[optionValue]="optionValue || 'code'"
+		appendTo="body"
+	/>
+	@for (
+		error of host.control() | slsUiFormControlErrors: host.errorTexts()!;
+		track $index
+	) {
+		<small class="text-red-500"> {{ error }}</small>
+	}
+</div>

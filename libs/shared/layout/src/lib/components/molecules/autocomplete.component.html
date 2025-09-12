@@ -1,0 +1,29 @@
+<div class="flex flex-col gap-2">
+	<label
+		[for]="host.id()"
+		class="whitespace-nowrap overflow-hidden text-ellipsis"
+		>
+		{{ host.label() }}
+		@if (isRequired) {
+			<span class="text-red-500">*</span>
+		}
+		</label
+	>
+	<p-autocomplete
+		[formControl]="$any(host.control())"
+		styleClass="w-full"
+		inputStyleClass="w-full"
+		[suggestions]="suggestions()"
+		(completeMethod)="complete.emit($event)"
+		optionLabel="name"
+		optionValue="value"
+		appendTo="body"
+		[minLength]="3"
+	/>
+	@for (
+		error of host.control() | slsUiFormControlErrors: host.errorTexts()!;
+		track $index
+	) {
+		<small class="text-red-500"> {{ error }}</small>
+	}
+</div>

@@ -1,0 +1,10 @@
+{
+	"files.associations": {
+		"*.css": "tailwindcss",
+		"*.scss": "tailwindcss"
+	},
+	"angular.enable-strict-mode-prompt": false,
+	"nxConsole.nxWorkspacePath": "",
+	"vsicons.presets.angular": true,
+	"nxConsole.generateAiAgentRules": true
+}
