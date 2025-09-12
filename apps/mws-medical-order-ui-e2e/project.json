@@ -1,0 +1,9 @@
+{
+	"name": "mws-medical-order-ui-e2e",
+	"$schema": "../../node_modules/nx/schemas/project-schema.json",
+	"projectType": "application",
+	"sourceRoot": "apps/mws-medical-order-ui-e2e/src",
+	"implicitDependencies": ["mws-medical-order-ui"],
+	"// targets": "to see all targets run: nx show project mws-medical-order-ui-e2e --web",
+	"targets": {}
+}
