@@ -1,4 +1,3 @@
-import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
@@ -7,7 +6,7 @@ import { LAYOUT_SETTINGS } from '../../providers';
 @Component({
 	selector: 'sls-ui-sidemenu',
 	standalone: true,
-	imports: [CommonModule, RouterModule],
+	imports: [RouterModule],
 	templateUrl: './sidemenu.component.html',
 	changeDetection: ChangeDetectionStrategy.OnPush,
 })

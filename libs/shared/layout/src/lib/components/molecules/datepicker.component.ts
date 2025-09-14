@@ -1,4 +1,3 @@
-import { CommonModule } from '@angular/common';
 import {
 	ChangeDetectionStrategy,
 	Component,
@@ -19,7 +18,6 @@ type SelectionMode = 'single' | 'range' | 'both';
 	selector: 'sls-ui-datepicker',
 	standalone: true,
 	imports: [
-		CommonModule,
 		ReactiveFormsModule,
 		DatePickerModule,
 		SlsUiFormControlErrorsPipe,

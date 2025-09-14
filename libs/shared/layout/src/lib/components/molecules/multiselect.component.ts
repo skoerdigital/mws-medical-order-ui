@@ -1,4 +1,3 @@
-import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { ReactiveFormsModule, Validators } from '@angular/forms';
 
@@ -15,12 +14,7 @@ import { PrimeNgControlBehaviorDirective } from './primeng-control-behavior.dire
 	selector: 'sls-ui-multiselect',
 	templateUrl: './multiselect.component.html',
 	standalone: true,
-	imports: [
-		CommonModule,
-		ReactiveFormsModule,
-		SlsUiFormControlErrorsPipe,
-		MultiSelectModule,
-	],
+	imports: [ReactiveFormsModule, SlsUiFormControlErrorsPipe, MultiSelectModule],
 	changeDetection: ChangeDetectionStrategy.OnPush,
 	providers: [MultiSelectStyle],
 	hostDirectives: [

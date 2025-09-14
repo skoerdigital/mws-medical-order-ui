@@ -1,4 +1,3 @@
-import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 
 import { LAYOUT_SETTINGS } from '../../providers';
@@ -6,7 +5,7 @@ import { LAYOUT_SETTINGS } from '../../providers';
 @Component({
 	selector: 'sls-ui-footer',
 	standalone: true,
-	imports: [CommonModule],
+	imports: [],
 	templateUrl: './footer.component.html',
 	changeDetection: ChangeDetectionStrategy.OnPush,
 })

@@ -68,7 +68,8 @@
 					"buildTarget": "mws-medical-order-ui:build:development"
 				}
 			},
-			"defaultConfiguration": "development"
+			"defaultConfiguration": "development",
+			"continuous": true
 		},
 		"extract-i18n": {
 			"executor": "@angular-devkit/build-angular:extract-i18n",
@@ -83,7 +84,8 @@
 			"executor": "@nx/jest:jest",
 			"outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
 			"options": {
-				"jestConfig": "apps/mws-medical-order-ui/jest.config.ts"
+				"jestConfig": "apps/mws-medical-order-ui/jest.config.ts",
+				"tsConfig": "apps/mws-medical-order-ui/tsconfig.spec.json"
 			}
 		},
 		"serve-static": {

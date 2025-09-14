@@ -1,4 +1,3 @@
-import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import {
 	FormControlDirective,
@@ -15,12 +14,7 @@ import { PrimeNgControlBehaviorDirective } from './primeng-control-behavior.dire
 	selector: 'sls-ui-select',
 	templateUrl: './select.component.html',
 	standalone: true,
-	imports: [
-		CommonModule,
-		ReactiveFormsModule,
-		SlsUiFormControlErrorsPipe,
-		SelectModule,
-	],
+	imports: [ReactiveFormsModule, SlsUiFormControlErrorsPipe, SelectModule],
 	changeDetection: ChangeDetectionStrategy.OnPush,
 	providers: [SelectStyle, FormControlDirective],
 	hostDirectives: [

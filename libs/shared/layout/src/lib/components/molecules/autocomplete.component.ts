@@ -1,4 +1,3 @@
-import { CommonModule } from '@angular/common';
 import {
 	ChangeDetectionStrategy,
 	Component,
@@ -29,7 +28,6 @@ interface AutocompleteSuggestions {
 	templateUrl: './autocomplete.component.html',
 	standalone: true,
 	imports: [
-		CommonModule,
 		ReactiveFormsModule,
 		SlsUiFormControlErrorsPipe,
 		MultiSelectModule,

@@ -1,13 +1,15 @@
 <div class="bg-gray-100 dark:bg-gray-400 h-full w-60">
 	<ul class="list-none p-4 m-0">
-		<li *ngFor="let item of menuItems" class="mb-2">
-			<a
-				[routerLink]="item.routerLink"
-				class="flex items-center cursor-pointer p-4 rounded text-white hover:bg-gray-200 dark:hover:bg-gray-600 hover:text-blue-500 duration-150 transition-colors"
-			>
-				<i [class]="item.icon + ' mr-2'"></i>
-				<span>{{ item.label }}</span>
-			</a>
-		</li>
+		@for (item of menuItems; track item) {
+			<li class="mb-2">
+				<a
+					[routerLink]="item.routerLink"
+					class="flex items-center cursor-pointer p-4 rounded text-white hover:bg-gray-200 dark:hover:bg-gray-600 hover:text-blue-500 duration-150 transition-colors"
+				>
+					<i [class]="item.icon + ' mr-2'"></i>
+					<span>{{ item.label }}</span>
+				</a>
+			</li>
+		}
 	</ul>
 </div>
