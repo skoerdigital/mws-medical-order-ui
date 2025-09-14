@@ -1,0 +1,32 @@
+{
+    "labels": {
+        "en": "Medical Order",
+        "pl": "Zamówienie medyczne"
+    },
+    "placeholders": {
+        "en": {
+            "search": "Search..."
+        },
+        "pl": {
+            "search": "Szukaj..."
+        }
+    },
+    "buttons": {
+        "en": {
+            "add": "Add",
+            "edit": "Edit",
+            "delete": "Delete",
+            "save": "Save",
+            "cancel": "Cancel",
+            "search": "Search"
+        },
+        "pl": {
+            "add": "Dodaj",
+            "edit": "Edytuj",
+            "delete": "Usuń",
+            "save": "Zapisz",
+            "cancel": "Anuluj",
+            "search": "Szukaj"
+        }
+    }
+}

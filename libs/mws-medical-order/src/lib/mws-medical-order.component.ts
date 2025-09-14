@@ -1,5 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
+
+import { MWS_MEDICAL_ORDER_SETTINGS } from './mws-medical-order.provider';
 
 @Component({
 	selector: 'mws-lib',
@@ -8,4 +10,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 	templateUrl: './mws-medical-order.component.html',
 	changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class MwsMedicalOrderComponent {}
+export class MwsMedicalOrderComponent {
+	readonly title = inject(MWS_MEDICAL_ORDER_SETTINGS).title;
+}

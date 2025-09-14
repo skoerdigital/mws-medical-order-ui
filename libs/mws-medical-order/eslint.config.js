@@ -12,7 +12,7 @@ module.exports = [
 				'error',
 				{
 					type: 'attribute',
-					prefix: 'lib',
+					prefix: 'mwsLib',
 					style: 'camelCase',
 				},
 			],
@@ -20,7 +20,7 @@ module.exports = [
 				'error',
 				{
 					type: 'element',
-					prefix: 'lib',
+					prefix: 'mws-lib',
 					style: 'kebab-case',
 				},
 			],

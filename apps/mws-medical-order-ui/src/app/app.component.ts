@@ -10,7 +10,6 @@ import { SlsUiHeaderComponent } from '@sls-ui/layout';
 	imports: [RouterModule, ToastModule, SlsUiHeaderComponent],
 	selector: 'mws-root',
 	templateUrl: './app.component.html',
-	styles: ``,
 })
 export class AppComponent {
 	title = 'mws-medical-order-ui';
