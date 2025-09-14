@@ -1,5 +1,6 @@
 import { Route } from '@angular/router';
 
+import { environment } from '../environments/environment';
 import mwsMedicalOrderTexts from '../mws-medical-order-texts.json';
 
 export const appRoutes: Route[] = [
@@ -10,6 +11,7 @@ export const appRoutes: Route[] = [
 				m.getmwsMedicalOrderRoutes({
 					texts: mwsMedicalOrderTexts,
 					title: 'Medical Orders',
+					apiEndpoints: environment.apiEndpoints,
 				}),
 			),
 	},
