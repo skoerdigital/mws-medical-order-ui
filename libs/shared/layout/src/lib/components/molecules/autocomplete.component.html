@@ -18,6 +18,8 @@
 		optionValue="value"
 		appendTo="body"
 		[minLength]="3"
+		[id]="host.id()"
+		[class]="host.class()"
 	/>
 	@for (
 		error of host.control() | slsUiFormControlErrors: host.errorTexts()!;

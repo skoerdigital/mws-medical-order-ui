@@ -37,7 +37,16 @@ interface AutocompleteSuggestions {
 	hostDirectives: [
 		{
 			directive: PrimeNgControlBehaviorDirective,
-			inputs: ['control', 'label', 'id', 'errorTexts'],
+			inputs: [
+				'control',
+				'label',
+				'id',
+				'class',
+				'errorTexts',
+				'options',
+				'optionLabel',
+				'optionValue',
+			],
 		},
 	],
 })

@@ -28,7 +28,16 @@ type SelectionMode = 'single' | 'range' | 'both';
 	hostDirectives: [
 		{
 			directive: PrimeNgControlBehaviorDirective,
-			inputs: ['control', 'label', 'id', 'errorTexts', 'maxDate'],
+			inputs: [
+				'control',
+				'label',
+				'id',
+				'class',
+				'errorTexts',
+				'options',
+				'optionLabel',
+				'optionValue',
+			],
 		},
 	],
 })

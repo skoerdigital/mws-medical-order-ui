@@ -15,7 +15,12 @@
 		"
 	></ng-container>
 	<ng-template let-control let-id="id" #defaultInputTemplate>
-		<input pInputText [formControl]="control" [id]="id" />
+		<input
+			pInputText
+			[formControl]="control"
+			[id]="id"
+			[class]="host.class()"
+		/>
 	</ng-template>
 	@for (
 		error of host.control() | slsUiFormControlErrors: host.errorTexts()!;

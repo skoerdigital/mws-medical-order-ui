@@ -24,6 +24,7 @@ import { PrimeNgControlBehaviorDirective } from './primeng-control-behavior.dire
 				'control',
 				'label',
 				'id',
+				'class',
 				'errorTexts',
 				'options',
 				'optionLabel',

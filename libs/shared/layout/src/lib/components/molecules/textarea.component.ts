@@ -2,7 +2,6 @@ import { CommonModule } from '@angular/common';
 import {
 	ChangeDetectionStrategy,
 	Component,
-	HostListener,
 	TemplateRef,
 	contentChild,
 	inject,
@@ -30,7 +29,16 @@ import { PrimeNgControlBehaviorDirective } from './primeng-control-behavior.dire
 	hostDirectives: [
 		{
 			directive: PrimeNgControlBehaviorDirective,
-			inputs: ['control', 'label', 'id', 'errorTexts'],
+			inputs: [
+				'control',
+				'label',
+				'id',
+				'class',
+				'errorTexts',
+				'options',
+				'optionLabel',
+				'optionValue',
+			],
 		},
 	],
 })

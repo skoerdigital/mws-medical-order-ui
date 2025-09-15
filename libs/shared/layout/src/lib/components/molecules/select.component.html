@@ -18,6 +18,7 @@
 		[optionLabel]="host.optionLabel() || 'description'"
 		[optionValue]="host.optionValue() || 'code'"
 		appendTo="body"
+		[class]="host.class()"
 	/>
 	@for (
 		error of host.control() | slsUiFormControlErrors: host.errorTexts()!;

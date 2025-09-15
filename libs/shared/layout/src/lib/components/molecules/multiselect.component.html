@@ -12,6 +12,7 @@
 		[optionLabel]="optionLabel || 'description'"
 		[optionValue]="optionValue || 'code'"
 		appendTo="body"
+		[class]="host.class()"
 	/>
 	@for (
 		error of host.control() | slsUiFormControlErrors: host.errorTexts()!;
