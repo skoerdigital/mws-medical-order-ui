@@ -4,9 +4,10 @@
 	"license": "MIT",
 	"scripts": {
 		"prepare": "husky",
-		"build": "npx cross-env NX_DISABLE_DB=true nx run mws-medical-order-ui:build --skip-nx-cache=true --configuration=production",
-		"serve": "npx cross-env NX_DISABLE_DB=true nx serve mws-medical-order-ui",
-		"test": "npx cross-env NX_DISABLE_DB=true nx test mws-medical-order-ui --code-coverage --watch=false"
+		"build": "npx cross-env NX_DB_CACHE=false nx run mws-medical-order-ui:build --skip-nx-cache=true --configuration=production",
+		"serve": "npx cross-env NX_DB_CACHE=false nx serve mws-medical-order-ui",
+		"test": "npx cross-env NX_DB_CACHE=false nx test mws-medical-order-ui --code-coverage --watch=false",
+		"posttest": "npx cross-env NX_DB_CACHE=false npx nx run mws-medical-order-ui-e2e:e2e"
 	},
 	"private": true,
 	"dependencies": {
@@ -100,6 +101,7 @@
 		"storybook": "9.1.5",
 		"tailwindcss": "^3.0.2",
 		"tailwindcss-primeui": "^0.3.4",
+		"ts-node": "10.9.1",
 		"ts-jest": "29.4.1",
 		"tslib": "^2.3.0",
 		"typescript": "5.9.2",
