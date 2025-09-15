@@ -26,9 +26,6 @@ import { PrimeNgControlBehaviorDirective } from './primeng-control-behavior.dire
 })
 export class SlsUiMultiselectComponent extends MultiSelect {
 	readonly host = inject(PrimeNgControlBehaviorDirective, { self: true });
-	override get hostClasses(): string {
-		return '';
-	}
 
 	get isRequired(): boolean {
 		return this.host.control().hasValidator(Validators.required);

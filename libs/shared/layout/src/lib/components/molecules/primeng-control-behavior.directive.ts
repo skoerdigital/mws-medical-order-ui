@@ -16,6 +16,9 @@ export class PrimeNgControlBehaviorDirective implements FormControlWrapper {
 	readonly id = input.required<string>();
 	readonly class = input<string>('');
 	readonly maxDate = input<Date | null>(null);
+	readonly options = input<any[]>([]);
+	readonly optionLabel = input<string | null>(null);
+	readonly optionValue = input<string | null>(null);
 
 	readonly errorTextsFromInput = input<Record<string, string>>(
 		{},

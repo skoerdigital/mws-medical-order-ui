@@ -5,7 +5,7 @@ import {
 	Validators,
 } from '@angular/forms';
 
-import { Select, SelectModule, SelectStyle } from 'primeng/select';
+import { SelectModule, SelectStyle } from 'primeng/select';
 
 import { SlsUiFormControlErrorsPipe } from './form-control-errors.pipe';
 import { PrimeNgControlBehaviorDirective } from './primeng-control-behavior.directive';
@@ -24,11 +24,8 @@ import { PrimeNgControlBehaviorDirective } from './primeng-control-behavior.dire
 		},
 	],
 })
-export class SlsUiSelectComponent extends Select {
+export class SlsUiSelectComponent {
 	readonly host = inject(PrimeNgControlBehaviorDirective, { self: true });
-	override get hostClass(): string {
-		return '';
-	}
 
 	get isRequired(): boolean {
 		return this.host.control().hasValidator(Validators.required);
